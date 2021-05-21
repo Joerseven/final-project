@@ -1,0 +1,30 @@
+{
+  "name": "lockbox-webpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "parcel ./src/webpage/index.html -p 5500 --public-url ./ --dist-dir ./dist",
+    "build": "parcel build ./src/webpage/index.html --no-source-maps --no-content-hash --no-cache --no-scope-hoist --dist-dir ./dist --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0-beta.2",
+    "eslint": "^7.26.0",
+    "eslint-plugin-react": "^7.23.2",
+    "parcel": "^2.0.0-beta.2"
+  },
+  "dependencies": {
+    "localforage": "^1.9.0",
+    "lodash": "^4.17.21",
+    "modules": "^0.4.0",
+    "openpgp": "^5.0.0-2",
+    "postcss": "^8.2.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-jss": "^10.6.0",
+    "react-router-dom": "^5.2.0"
+  }
+}

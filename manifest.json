@@ -1,0 +1,22 @@
+{
+  "name": "Lockbox Email Encryption",
+  "version": "0.0.1",
+  "description": "Adds manual key encryption to chrome.",
+  "permissions": ["declarativeContent", "activeTab", "storage", "tabs"],
+  "background": {
+    "page": "dist/background.html",
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "dist/actionmenu.html"
+  },
+  "options_page": "dist/index.html",
+  "content_scripts": [{
+    "matches": ["https://mail.google.com/*"],
+    "js": ["./dist/content.js"]
+  }],
+  "web_accessible_resources": [
+    "dist/actionmenu.js"
+  ],
+  "manifest_version": 2
+}

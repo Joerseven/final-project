@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div class="logo">
+      <div style="background: url(lockbox.png)" class="imgLogo"></div>
+      Lockbox
+    </div>
+    <div class="container">
+      Add a lockbox to the email you have open. Need to have created a lockbox.
+      <button id="encrypt">Add a lockbox</button>
+    </div>
+    <div class="container">
+      If you want to read a lockbox on your screen and it isn't loading just press this button.
+      <button id="decrypt">Open a lockbox</button>
+    </div>
+    <div class="container" style="border: none">
+      Options page: Create a lockbox, Manage the ones you have, Choose a key for opening lockboxes, and more!
+      <button id="attach">Options</button>
+    </div>
+
+    <script src="actionmenu.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100&display=swap");
+      body {
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 16px;
+        width: 300px;
+        background-color: lightgray;
+      }
+      div {
+        margin: 0 auto;
+      }
+      button {
+        border: none;
+        text-align: center;
+        text-decoration: none;
+        display: inline-flex;
+        cursor: pointer;
+        margin: 4px 2px;
+        width: auto;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 4px 0 rgba(73, 52, 52, 0.2);
+        font-size: 24px;
+        padding: 20px;
+        font-family: "Libre Franklin", sans-serif;
+      }
+      .container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 2px solid grey;
+        padding: 5px;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 15px 0;
+        font-family: "Space Mono", monospace;
+        font-size: 24px;
+      }
+      .imgLogo {
+        margin: 0 7px 0 0;
+        width: 32px;
+        height: 28px;
+      }
+    </style>
+  </body>
+</html>
